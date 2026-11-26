@@ -42,3 +42,15 @@ Append-only. One entry per checkpoint. Never rewrite earlier entries (add a corr
 - Completed: Added "Execution mode: continuous, no approval gates" to CLAUDE.md and AGENTS.md rule 24. Seeded docs/design/BRIEF.md, docs/finance/NET_WORTH_RULES.md, docs/finance/INVESTMENT_RULES.md, docs/reviews/README.md (template), .gitignore. Added docs/GENERATED_ARTIFACTS.md registering every build-created path with its phase; validate-kit.sh now fails on any referenced docs/ path that neither exists nor is registered.
 - Tests run: `bash scripts/validate-kit.sh` → passed; negative test (registry entry removed) → failed as expected, then restored.
 - Next steps: Execute Phase 00.
+
+### [2026-11-26] Phase 00 — Discovery and Repository Audit
+- Status: COMPLETE_WITH_LIMITATIONS
+- Commit: chore(checkpoint): phase 00
+- Completed: repo/Git/environment audit; ADR-0001 confirmed; skills bootstrap with status table; .gitignore extended (.data/, local .claude settings); `docs/AUDIT_PHASE_00.md`.
+- Remaining: none.
+- Decisions: ADR-0001 confirmed; PGlite + agents-on-disjoint-paths noted for ADR-0002.
+- Files changed (key): docs/AUDIT_PHASE_00.md, .gitignore, PROGRESS.md, REMOTE_PROGRESS/*, ROADMAP.md.
+- Tests run: `bash scripts/validate-kit.sh` → OK (22/22).
+- Gate: [x] requirements [x] tests [x] lead sanity check (no independent review required) [n/a] responsive/a11y [x] docs [x] traceability (S01,S35–S40,SFD evidence = this audit) [x] progress files [x] limitations.
+- Limitations: no Docker/Supabase; Chromium only; skills from plugins load next session (fallbacks used).
+- Next steps: Phase 01 on branch phase/01-foundation.

@@ -32,3 +32,9 @@ supabase/.temp/
 .scratch/
 tmp/
 *.log
+
+# local PGlite database (dev/test data, synthetic only)
+.data/
+# local Claude Code settings (machine-specific plugin enablement)
+.claude/settings.json
+.claude/settings.local.json

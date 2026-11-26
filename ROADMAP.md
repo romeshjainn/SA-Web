@@ -8,7 +8,7 @@ Update the status column only when the phase gate in `docs/PHASE_GATES.md` is sa
 
 | # | Phase | File | Depends on | Status |
 |---|---|---|---|---|
-| 00 | Discovery and Repository Audit | `phases/PHASE_00_DISCOVERY_AUDIT.md` | — | NOT_STARTED |
+| 00 | Discovery and Repository Audit | `phases/PHASE_00_DISCOVERY_AUDIT.md` | — | COMPLETE_WITH_LIMITATIONS |
 | 01 | Architecture and Foundation (unified Next.js scaffold) | `phases/PHASE_01_ARCHITECTURE_FOUNDATION.md` | 00 | NOT_STARTED |
 | 02 | Design System, Responsive UX, Accessibility, Themes, PWA shell | `phases/PHASE_02_DESIGN_SYSTEM.md` | 01 | NOT_STARTED |
 | 03 | Authentication, Threat Model, Cryptography | `phases/PHASE_03_AUTH_CRYPTO.md` | 01 (02 for UI) | NOT_STARTED |

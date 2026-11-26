@@ -3,26 +3,30 @@
 Snapshot for fast recovery. Overwrite this file at every checkpoint (history lives in `PHASE_LOG.md`).
 
 ```yaml
-current_phase: "00"
+current_phase: "01"
 phase_status: NOT_STARTED
-last_verified_checkpoint: null        # git commit hash
-last_checkpoint_time: null
-branch: null
-open_worktrees: []                    # list of {path, branch, stream, owner}
-active_agents: []                     # list of {name, phase, stream, owned_paths}
-completed_phases: []
+last_verified_checkpoint: "chore(checkpoint): phase 00"   # see git log
+last_checkpoint_time: "2026-11-26"
+branch: main
+open_worktrees: []
+active_agents: []
+completed_phases: ["00"]
 in_progress_streams: []
 blocked: false
 blockers: []
-limitations: []
+limitations:
+  - "No Docker / no Supabase credentials: PGlite used for local Postgres (ADR-0002 in Phase 01)"
+  - "Playwright: Chromium only"
+  - "No physical devices: mobile = Playwright emulation (simulated)"
 known_defects: []
 security_concerns: []
 last_tests_run:
-  command: null
-  result: null                        # pass | fail | partial | not_run
-  timestamp: null
+  command: "bash scripts/validate-kit.sh"
+  result: pass
+  timestamp: "2026-11-26"
 next_steps:
-  - "Execute Phase 00 per phases/PHASE_00_DISCOVERY_AUDIT.md"
+  - "git checkout -b phase/01-foundation main"
+  - "Execute phases/PHASE_01_ARCHITECTURE_FOUNDATION.md"
 ```
 
 ## Resume instructions

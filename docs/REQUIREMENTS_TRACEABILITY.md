@@ -40,14 +40,14 @@ At each phase gate, fill the Evidence column (file paths, test names, review rep
 | S32 | 32 | State and UI reliability (all UI states) | 02 | 04, 18, **every phase** | |
 | S33 | 33 | Testing strategy, synthetic data | 20 | **every phase**, `docs/TESTING_STRATEGY.md` | |
 | S34 | 34 | Web-only dev/testing; browser-based benchmarks; no invented mobile numbers | 03 | 00, 18, 20 | |
-| S35 | 35 | Roadmap Phases 00–21 | 00 | ROADMAP.md | |
-| S36 | 36 | Phase gates; environmental limitations ≠ deadlock | 00 | `docs/PHASE_GATES.md` | |
-| S37 | 37 | Autonomous execution, agents, worktrees | 00 | `docs/MULTI_AGENT_COORDINATION.md` | |
-| S38 | 38 | Model and resource strategy | 00 | `docs/MULTI_AGENT_COORDINATION.md` | |
-| S39 | 39 | Git and checkpoints | 00 | `docs/CHECKPOINTING_AND_RECOVERY.md`, all | |
-| S40 | 40 | Interruption/usage-limit recovery; PROGRESS/STATUS/PHASE_LOG | 00 | `docs/CHECKPOINTING_AND_RECOVERY.md`, all | |
+| S35 | 35 | Roadmap Phases 00–21 | 00 | ROADMAP.md | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
+| S36 | 36 | Phase gates; environmental limitations ≠ deadlock | 00 | `docs/PHASE_GATES.md` | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
+| S37 | 37 | Autonomous execution, agents, worktrees | 00 | `docs/MULTI_AGENT_COORDINATION.md` | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
+| S38 | 38 | Model and resource strategy | 00 | `docs/MULTI_AGENT_COORDINATION.md` | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
+| S39 | 39 | Git and checkpoints | 00 | `docs/CHECKPOINTING_AND_RECOVERY.md`, all | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
+| S40 | 40 | Interruption/usage-limit recovery; PROGRESS/STATUS/PHASE_LOG | 00 | `docs/CHECKPOINTING_AND_RECOVERY.md`, all | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
 | S41 | 41 | Definition of done | 21 | 20, `docs/DEFINITION_OF_DONE.md` | |
-| SFD | Final directive | Inspect repo, reconcile kit, establish AGENTS.md, execute 00→21, no Android, no routine approval | 00 | all | |
+| SFD | Final directive | Inspect repo, reconcile kit, establish AGENTS.md, execute 00→21, no Android, no routine approval | 00 | all | `docs/AUDIT_PHASE_00.md`, `scripts/validate-kit.sh` pass |
 | A01 | Addendum | Option to save email addresses and mobile numbers (saved contacts store) | 06 | 04, 17 | |
 | A02 | Addendum | Suggest saved emails/phones in relevant email/phone fields (shared field component) | 06 | 08–13, 15, 16 | |
 | A03 | Addendum | Installable PWA on phones, no native tooling | 02 | 04, 19, 20 | |
